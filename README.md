@@ -15,3 +15,14 @@ Data preprocessing involved steps like converting text to lowercase, tokenizatio
 Word frequency analysis helps in identifying key words associated with spam and non-spam messages.
 Ham and spam messages will be showcased on the website for testing predictions.
 The model successfully predicts spam messages based on provided samples.
+
+# models
+
+Text preprocessing steps included converting text to lowercase, tokenizing, removing special characters and stopwords, and applying stemming to reduce words to their root form.
+# Model Building
+
+Text data is converted into numerical features using TF-IDF vectorization.
+The dataset is split into training and testing sets.
+Three different Naive Bayes classifiers (Gaussian Naive Bayes, Multinomial Naive Bayes, and Bernoulli Naive Bayes) are trained and evaluated for spam classification.
+Model performance metrics such as accuracy score, confusion matrix, and precision score are calculated for each classifier.
+The TF-IDF vectorizer and the best-performing Multinomial Naive Bayes classifier are saved using pickle.
